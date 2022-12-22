@@ -1,0 +1,14 @@
+name: 'Say Hellow WorkFlow'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hellow_word:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo the message
+        run: |
+          echo 'Hola Mundo'
